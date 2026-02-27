@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="網頁描述">
+    <title>我的網頁</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #444;
+            padding: 0.5rem 0;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #ffcc00;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        section {
+            margin-bottom: 2rem;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>歡迎來到我的網頁</h1>
+        <p>這是一個簡單的 HTML 範本</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#首頁">首頁</a></li>
+            <li><a href="#關於">關於</a></li>
+            <li><a href="#服務">服務</a></li>
+            <li><a href="#聯絡">聯絡</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="首頁">
+            <h2>首頁</h2>
+            <p>這是首頁內容。您可以在這裡放置您想要的任何資訊。</p>
+        </section>
+        
+        <section id="關於">
+            <h2>關於我們</h2>
+            <p>這是關於頁面的內容。介紹您的專案或組織。</p>
+        </section>
+        
+        <section id="服務">
+            <h2>服務</h2>
+            <p>列出您提供的服務或產品。</p>
+        </section>
+        
+        <section id="聯絡">
+            <h2>聯絡我們</h2>
+            <form>
+            <label for="名字">請輸入名字：</label>
+            <input type="text" id="名字" name="名字" required>
+            
+            <label for="電郵">電郵：</label>
+            <input type="email" id="電郵" name="電郵" required>
+            
+            <label for="訊息">訊息：</label>
+            <textarea id="訊息" name="訊息" rows="5" required></textarea>
+            
+            <button type="submit">送出</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 我的網站。版權所有。</p>
+    </footer>
+</body>
+</html>
